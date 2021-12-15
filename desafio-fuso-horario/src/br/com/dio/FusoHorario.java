@@ -21,7 +21,7 @@ public class FusoHorario {
 
 		System.out.println(ajuste);*/
 
-        int horaChegada = (horasaida + tempoviagem);
+        int horaChegada = (horasaida + tempoviagem + fuso);
         int ajuste;
 
         if (horaChegada > 24) {
@@ -31,8 +31,6 @@ public class FusoHorario {
         } else if (horaChegada == 24){
             horaChegada = 0;
         }
-
-        horaChegada += fuso;
 
         System.out.println(horaChegada);
 
